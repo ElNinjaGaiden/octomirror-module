@@ -20,6 +20,11 @@ Module.register("octomirror-module", {
         showOnlyWhilePrinting: false,
     },
 
+	// Required styles
+	getStyles: function() {
+		return [this.data.path + "/css/octoprint.css"];
+	},
+
     //Override dom generator.
     getDom: function() {
         var self = this;
@@ -27,6 +32,7 @@ Module.register("octomirror-module", {
 
         if (this.config.showStream) {
             var stream = document.createElement("img");
+	    stream.className = "octoprint-stream";
             stream.src = (this.config.streamUrl) ? this.config.streamUrl : this.config.url + ":8080/?action=stream";
             wrapper.appendChild(stream);
         }
@@ -151,7 +157,8 @@ Module.register("octomirror-module", {
     getTranslations: function() {
         return {
             en: "translations/en.json",
-            de: "translations/de.json"
+            de: "translations/de.json",
+	    es: "translations/es.json"
         };
     },
 
