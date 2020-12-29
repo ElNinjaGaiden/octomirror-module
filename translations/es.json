@@ -1,0 +1,15 @@
+{
+    "TITLE": "OctoPrint",
+
+    "STATE": "Estado",
+    "FILE": "Archivo",
+    "ELAPSED": "Tiempo Transcurrido",
+    "REMAINING": "Tiempo Restante",
+    "PERCENT": "Porcentaje Completado",
+    "OFFLINE": "Offline / Desconetado",
+
+    "BED": "Cama",
+    "NOZZLE": "Nozzle",
+    "TEMPS": "Temps",
+    "TARGET": "T"
+}
